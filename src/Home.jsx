@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 
 function Home() {
-  const headingText = "Glowing Section";
+  const headingText = "Welcome To VelevetByte";
   const images = [
     "https://i.postimg.cc/zB0M95f1/istockphoto-1352603244-1024x1024.jpg",
     "https://i.postimg.cc/ZR77wcfb/istockphoto-1334591614-1024x1024.jpg",
@@ -27,7 +27,7 @@ function Home() {
         </h1>
 
         <p className="mt-6 text-xl text-gray-300 text-center px-4">
-          Floating effects with full-length lines
+          Empowering companies with smart technology, creative ideas, and reliable IT solutions for the future
         </p>
 
         <button className="mt-10 px-8 py-3 bg-yellow-500 text-black font-semibold border-2 border-yellow-500 rounded-lg transform transition-all duration-500 hover:bg-white hover:text-black hover:border-white hover:rotate-y-180">
@@ -83,12 +83,53 @@ function Home() {
         </style>
       </section>
 
-      <section className="relative w-full h-screen flex items-center justify-center perspective-1000 overflow-hidden bg-black">
+
+    <section className="relative w-full bg-black py-20 flex flex-col md:flex-row items-center justify-between px-6 md:px-20 overflow-hidden">
+  {/* Top-left floating blob */}
+  <div className="absolute top-[-200px] left-[-200px] w-[500px] h-[500px] rounded-full bg-yellow-600 blur-[200px] opacity-70 animate-float" style={{ animation: 'float 3s ease-in-out infinite reverse' }}></div>
+  
+  {/* Top-right floating blob */}
+  <div className="absolute top-[-200px] right-[-200px] w-[500px] h-[500px] rounded-full bg-yellow-600 blur-[200px] opacity-70 animate-float" style={{ animation: 'float 3s ease-in-out infinite' }}></div>
+
+  <div className="md:w-1/2 mb-10 md:mb-0 z-10">
+    <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+      Our Amazing Service
+    </h2>
+    <p className="text-gray-300 mb-6 w-90">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate esse alias delectus, sequi numquam assumenda rerum maiores cum laudantium quisquam in veritatis officia, culpa, ea quibusdam illo minima impedit quaerat.
+    </p>
+    <button className="px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg transition-all duration-300 hover:bg-white hover:text-black">
+      Learn More
+    </button>
+  </div>
+
+  <div className="md:w-1/2 flex justify-center z-10">
+    <img 
+      src="https://i.postimg.cc/43PM7t9g/istockphoto-1888905382-1024x1024-cleanup.png" 
+      alt="Service" 
+      className="w-full max-w-md rounded-xl shadow-lg"
+    />
+  </div>
+
+  <style>
+    {`
+      @keyframes float {
+        0% { transform: translate(0, 0) scale(1); }
+        50% { transform: translate(30px, -30px) scale(1.1); }
+        100% { transform: translate(0, 0) scale(1); }
+      }
+      .animate-float { animation: float 3s ease-in-out infinite; }
+    `}
+  </style>
+</section>
+
+
+      <section className="relative w-full h-screen flex items-center justify-center perspective-1000 overflow-hidden bg-white">
         <div className="relative w-96 h-96 animate-rotate-3d">
           {images.map((src, index) => (
             <div
               key={index}
-              className="absolute w-96 h-96 bg-white rounded-xl shadow-xl flex flex-col items-center justify-center text-center"
+              className="absolute w-96 h-96 bg-black rounded-xl shadow-xl flex flex-col items-center justify-center text-center"
               style={{ transform: `rotateY(${index * 120}deg) translateZ(350px)` }}
             >
               <img
@@ -96,8 +137,8 @@ function Home() {
                 alt={`carousel-${index}`}
                 className="w-72 h-72 object-cover rounded-lg"
               />
-              <p className="mt-3 text-gray-700 text-sm px-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <p className="mt-3 text-white text-sm px-4 w-60">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nisi accusantium quis animi deleniti iusto illum veritatis! Temporibus, quam quaerat.
               </p>
             </div>
           ))}
