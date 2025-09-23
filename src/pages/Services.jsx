@@ -81,8 +81,7 @@ const Services = () => {
 
         {/* Right Content */}
         <div className="w-full md:w-1/2 flex items-center justify-center">
-          <div className="w-full h-64 md:h-96 bg-gray-800 rounded-lg shadow-lg flex items-center justify-center">
-            <p className="text-gray-500 text-sm">Image / Illustration</p>
+          <div>
           </div>
         </div>
       </div>

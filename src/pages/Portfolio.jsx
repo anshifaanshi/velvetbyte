@@ -3,7 +3,6 @@ import { useScroll } from "framer-motion";
 import PortfolioCard from "../components/ui/StackingCard";
 import ParallaxSection from "../components/ui/ParallaxSection";
 import Button from "../components/ui/Button";
-import TextWheel from "../components/ui/TextWheel";
 
 const projects = [
   {
@@ -72,7 +71,7 @@ const Portfolio = () => {
 
         {/* Right Content */}
         <div className="w-full md:w-1/2 flex items-center justify-center">
-         <TextWheel color={"black"} />
+        <div></div>
         </div>
       </div>
 
