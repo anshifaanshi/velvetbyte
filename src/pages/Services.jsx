@@ -1,0 +1,121 @@
+import React from "react";
+import Card from "../components/ui/Card";
+import {
+  Globe,
+  Paintbrush,
+  Palette,
+  ShoppingCart,
+  SquareCode,
+} from "lucide-react";
+import ParallaxSection from "../components/ui/ParallaxSection";
+import Button from "../components/ui/Button";
+
+const serviceCards = [
+  {
+    title: "Ecommerce Development",
+    description:
+      "Crafting responsive and high-performance websites tailored to your business needs.",
+    icon: <ShoppingCart />,
+  },
+  {
+    title: "Mobile App Development",
+    description:
+      "Building native and cross-platform mobile applications for iOS and Android.",
+    icon: <SquareCode />,
+  },
+  {
+    title: "UI/UX Design",
+    description:
+      "Creating intuitive and visually appealing user interfaces for exceptional user experiences.",
+    icon: <Palette />,
+  },
+  {
+    title: "Digital Marketing",
+    description:
+      "Driving online growth through SEO, social media, and content marketing strategies.",
+    icon: <Globe />,
+  },
+  {
+    title: "DevOps & Automation",
+    description:
+      "Streamlining your development and operations workflows for efficiency.",
+    icon: <Paintbrush />,
+  },
+];
+
+const Services = () => {
+  return (
+    <section className="bg-black text-white">
+      <div className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-6 px-6 md:px-12 lg:px-20">
+        {/* Left Content */}
+        <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
+          <div className="flex items-center justify-center md:justify-start gap-3">
+            <p className="text-sm text-gray-400">Services</p>
+            <div className="h-0.5 w-30 bg-line rounded"></div>
+          </div>
+
+          <h1 className="text-3xl sm:text-5xl md:text-7xl leading-tight">
+            The Solutions <br />
+            <span className="text-primary font-bold text-4xl sm:text-6xl">
+              Proudly Deliver
+            </span>
+          </h1>
+
+          <p className="text-sm sm:text-base md:text-lg text-muted leading-relaxed">
+            We provide tailored solutions designed not just to help your brand
+            grow, but to make it unforgettable — empowering you to stand out in
+            crowded markets, capture attention with confidence, and achieve
+            results that endure.
+          </p>
+        </div>
+
+        {/* Right Content */}
+        <div className="w-full md:w-1/2 flex items-center justify-center">
+          <div className="w-full h-64 md:h-96 bg-gray-800 rounded-lg shadow-lg flex items-center justify-center">
+            <p className="text-gray-500 text-sm">Image / Illustration</p>
+          </div>
+        </div>
+      </div>
+
+      {/* service cards */}
+      <div className="py-42 text-center bg-white">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-screen-xl mx-auto px-2 sm:px-4">
+          {serviceCards.map((serviceCard, index) => {
+            return (
+              <div
+                key={index}
+                className="rounded-xl p-1 flex flex-col justify-center items-center text-center shadow-lg transition-all duration-300 hover:shadow-xl text-sm sm:text-base"
+              >
+                <Card
+                  title={serviceCard.title}
+                  description={serviceCard.description}
+                  icon={serviceCard.icon}
+                />
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Cta section */}
+      <div className="text-center">
+        <ParallaxSection imageUrl="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg">
+          <div className="flex flex-col items-center">
+            <h1 className="text-4xl sm:text-6xl mx-auto leading-10 sm:leading-18 max-w-4xl">
+              Let’s make an impact together. <br /> Ready to create something{" "}
+              <br />
+              <span className="text-primary font-bold text-5xl sm:text-7xl">
+                extraordinary ?
+              </span>
+            </h1>
+            <div className="mt-6">
+              <Button theme="black" text="Get Started" onClick={() => {}} />
+            </div>
+          </div>
+        </ParallaxSection>
+      </div>
+    </section>
+  );
+};
+
+export default Services;
