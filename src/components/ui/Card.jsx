@@ -30,7 +30,7 @@ const Card = ({
             alt={title}
             width={600}
             height={600}
-            className="absolute -bottom-1 group-hover:-bottom-5 right-0 h-64 w-[80%] group-hover:border-4 border-4 group-hover:border-black rounded-lg object-cover transition-all duration-300"
+            className="absolute -bottom-1 group-hover:-bottom-5 right-0 h-64 w-[80%] rounded-lg object-cover transition-all duration-300"
           />
         )}
       </figure>

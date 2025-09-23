@@ -20,6 +20,7 @@ const serviceCards = [
       "Our creative agency is a team of professionals focused on helping your brand grow.",
     items: ["WORDPRESS", "UI UX DESIGN", "WEB DEVELOPMENT"],
     icon: <Code size={24} />,
+    image:'https://images.pexels.com/photos/270632/pexels-photo-270632.jpeg'
   },
   {
     title: "Digital Marketing",
@@ -27,18 +28,14 @@ const serviceCards = [
       "Our creative agency is a team of professionals focused on helping your brand grow.",
     items: ["SOCIAL MEDIA", "PERFORMANCE MARKETING", "SEO", "CONTENT CREATION"],
     icon: <BarChart2 size={24} />,
+    image:'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg'
   },
   {
     title: "Graphic Design",
     description:
       "Our creative agency is a team of professionals focused on helping your brand grow.",
-    items: [
-      "CREATIVE ADS",
-      "BRANDING",
-      "POSTER DESIGNING",
-      "BROCHURE DESIGNING",
-    ],
     icon: <Brush size={24} />,
+    image:'https://images.pexels.com/photos/326501/pexels-photo-326501.jpeg'
   },
 ];
 
