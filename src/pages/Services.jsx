@@ -12,7 +12,7 @@ const serviceCards = [
       "Our creative agency is a team of professionals focused on helping your brand grow.",
     items: ["SHOPIFY", "WOOCOMMERCE"],
     icon: <ShoppingCart size={24} />,
-    image:"https://images.pexels.com/photos/7679865/pexels-photo-7679865.jpeg"
+    image: "https://images.pexels.com/photos/7679865/pexels-photo-7679865.jpeg",
   },
   {
     title: "Website Design and Development",
@@ -20,7 +20,7 @@ const serviceCards = [
       "Our creative agency is a team of professionals focused on helping your brand grow.",
     items: ["WORDPRESS", "UI UX DESIGN", "WEB DEVELOPMENT"],
     icon: <Code size={24} />,
-    image:'https://images.pexels.com/photos/270632/pexels-photo-270632.jpeg'
+    image: "https://images.pexels.com/photos/270632/pexels-photo-270632.jpeg",
   },
   {
     title: "Digital Marketing",
@@ -28,14 +28,28 @@ const serviceCards = [
       "Our creative agency is a team of professionals focused on helping your brand grow.",
     items: ["SOCIAL MEDIA", "PERFORMANCE MARKETING", "SEO", "CONTENT CREATION"],
     icon: <BarChart2 size={24} />,
-    image:'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg'
+    image: "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg",
   },
   {
     title: "Graphic Design",
     description:
       "Our creative agency is a team of professionals focused on helping your brand grow.",
     icon: <Brush size={24} />,
-    image:'https://images.pexels.com/photos/326501/pexels-photo-326501.jpeg'
+    image: "https://images.pexels.com/photos/326501/pexels-photo-326501.jpeg",
+  },
+  {
+    title: "Graphic Design",
+    description:
+      "Our creative agency is a team of professionals focused on helping your brand grow.",
+    icon: <Brush size={24} />,
+    image: "https://images.pexels.com/photos/326501/pexels-photo-326501.jpeg",
+  },
+  {
+    title: "Graphic Design",
+    description:
+      "Our creative agency is a team of professionals focused on helping your brand grow.",
+    icon: <Brush size={24} />,
+    image: "https://images.pexels.com/photos/326501/pexels-photo-326501.jpeg",
   },
 ];
 
@@ -75,7 +89,13 @@ const Services = () => {
 
       {/* service cards */}
       <div className="py-22 text-center bg-white">
-        <h1 className="text-black mb- text-3xl sm:text-5xl lg:text-6xl">Highlighting Services with <span className="block font-semibold text-primary leading-20 mb-10"> Impact & Clarity</span></h1>
+        <h1 className="text-black mb- text-3xl sm:text-5xl lg:text-6xl">
+          Highlighting Services with{" "}
+          <span className="block font-semibold text-primary leading-20 mb-10">
+            {" "}
+            Impact & Clarity
+          </span>
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-screen-xl mx-auto px-2 sm:px-4">
           {serviceCards.map((serviceCard, index) => {
             return (
@@ -97,7 +117,10 @@ const Services = () => {
 
       {/* Cta section */}
       <div className="text-center">
-        <ParallaxSection imageUrl="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg">
+        <ParallaxSection
+          imageUrl="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
+          height={"h-screen"}
+        >
           <div className="flex flex-col items-center">
             <h1 className="text-4xl sm:text-6xl mx-auto leading-10 sm:leading-18 max-w-4xl">
               Let’s make an impact together. <br /> Ready to create something{" "}

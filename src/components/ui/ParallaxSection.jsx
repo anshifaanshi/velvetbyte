@@ -1,9 +1,9 @@
 import React from "react";
 
-const ParallaxSection = ({ imageUrl, children }) => {
+const ParallaxSection = ({ imageUrl, children, height }) => {
   return (
     <div
-      className="relative h-screen bg-cover bg-center bg-fixed"
+      className={`relative ${height} bg-cover bg-center bg-fixed`}
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
       <div className="absolute inset-0 bg-black opacity-80"></div>

@@ -8,7 +8,7 @@ const Button = ({ theme = "black", text, onClick }) => {
   return (
     <button
       onClick={onClick}
-      className={`group flex items-center justify-center px-6 py-2 text-md  transition-all duration-300 cursor-pointer border-2 rounded-tl-xl rounded-br-xl 
+      className={`group flex items-center justify-center px-6 py-2 text-md  transition-all duration-300 cursor-pointer border-2 rounded-tl-xl rounded-br-xl relative 
         ${
           isBlackTheme
             ? "bg-black text-white border-white hover:bg-white hover:text-black"
