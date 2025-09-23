@@ -19,22 +19,22 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="hover:text-white">
+                <Link to="/" className="hover:text-primary">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/why-learn" className="hover:text-white">
-                  Why Learn with Us
+                <Link to="/why-learn" className="hover:text-primary">
+                  Services
                 </Link>
               </li>
               <li>
-                <Link to="/courses" className="hover:text-white">
-                  Courses
+                <Link to="/courses" className="hover:text-primary">
+                  Portfolio
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-white">
+                <Link to="/contact" className="hover:text-primary">
                   Contact Us
                 </Link>
               </li>
@@ -48,12 +48,12 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/terms" className="hover:text-white">
+                <Link to="/terms" className="hover:text-primary">
                   Terms of Services
                 </Link>
               </li>
               <li>
-                <Link to="/privacy" className="hover:text-white">
+                <Link to="/privacy" className="hover:text-primary">
                   Privacy Policy
                 </Link>
               </li>
@@ -69,13 +69,13 @@ const Footer = () => {
               <li>
                 <a
                   href="mailto:support@skillbyte.com"
-                  className="hover:text-white"
+                  className="hover:text-primary"
                 >
-                  support@skillbyte.com
+                  support@velvetbyte.com
                 </a>
               </li>
               <li>
-                <a href="tel:+10234567890" className="hover:text-white">
+                <a href="tel:+10234567890" className="hover:text-primary">
                   +1 (023) 456-7890
                 </a>
               </li>
@@ -91,21 +91,21 @@ const Footer = () => {
         <div className=" flex justify-between">
           {/* Copyright Notice */}
           <div className="text-center mt-8 text-sm">
-            <p>&copy; Copyright 2025, Skillbyte</p>
+            <p>&copy; Copyright 2025, Velvetbyte</p>
           </div>
 
           {/* Social Media Icons */}
           <div className="flex justify-center gap-6 mt-8">
-            <a href="#" className="hover:text-white">
+            <a href="#" className="hover:text-primary">
               <Facebook size={24} />
             </a>
-            <a href="#" className="hover:text-white">
+            <a href="#" className="hover:text-primary">
               <Twitter size={24} />
             </a>
-            <a href="#" className="hover:text-white">
+            <a href="#" className="hover:text-primary">
               <Instagram size={24} />
             </a>
-            <a href="#" className="hover:text-white">
+            <a href="#" className="hover:text-primary">
               <Linkedin size={24} />
             </a>
           </div>
