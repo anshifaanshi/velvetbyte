@@ -76,13 +76,7 @@ const Services = () => {
 
       {/* service cards */}
       <div className="py-22 text-center bg-white">
-        <h1 className="text-black mb-12 text-3xl sm:text-5xl lg:text-6xl">
-          Highlighting Services with{" "}
-          <span className="block font-semibold text-primary leading-20">
-            {" "}
-            Impact & Clarity
-          </span>
-        </h1>
+        <h1 className="text-black mb- text-3xl sm:text-5xl lg:text-6xl">Highlighting Services with <span className="block font-semibold text-primary leading-20 mb-10"> Impact & Clarity</span></h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-screen-xl mx-auto px-2 sm:px-4">
           {serviceCards.map((serviceCard, index) => {
             return (
