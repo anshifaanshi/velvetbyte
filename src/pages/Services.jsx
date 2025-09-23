@@ -3,6 +3,7 @@ import Card from "../components/ui/Card";
 import ParallaxSection from "../components/ui/ParallaxSection";
 import Button from "../components/ui/Button";
 import { BarChart2, Brush, Code, ShoppingCart } from "lucide-react";
+import { image } from "framer-motion/client";
 
 const serviceCards = [
   {
@@ -11,6 +12,7 @@ const serviceCards = [
       "Our creative agency is a team of professionals focused on helping your brand grow.",
     items: ["SHOPIFY", "WOOCOMMERCE"],
     icon: <ShoppingCart size={24} />,
+    image:"https://images.pexels.com/photos/7679865/pexels-photo-7679865.jpeg"
   },
   {
     title: "Website Design and Development",
@@ -88,6 +90,7 @@ const Services = () => {
                   title={serviceCard.title}
                   description={serviceCard.description}
                   icon={serviceCard.icon}
+                  image={serviceCard.image}
                 />
               </div>
             );
