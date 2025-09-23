@@ -6,11 +6,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-   border-radius: 80px;   /* 👈 Rounded corners */
+   border-radius: 80px;   
   margin: 0px auto; 
 }
 
-/* Carousel base */
+
 .carousel {
   position: absolute;
   top: 0;
