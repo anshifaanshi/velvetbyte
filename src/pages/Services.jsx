@@ -1,45 +1,42 @@
 import React from "react";
 import Card from "../components/ui/Card";
-import {
-  Globe,
-  Paintbrush,
-  Palette,
-  ShoppingCart,
-  SquareCode,
-} from "lucide-react";
 import ParallaxSection from "../components/ui/ParallaxSection";
 import Button from "../components/ui/Button";
+import { BarChart2, Brush, Code, ShoppingCart } from "lucide-react";
 
 const serviceCards = [
   {
-    title: "Ecommerce Development",
+    title: "Ecommerce website Development",
     description:
-      "Crafting responsive and high-performance websites tailored to your business needs.",
-    icon: <ShoppingCart />,
+      "Our creative agency is a team of professionals focused on helping your brand grow.",
+    items: ["SHOPIFY", "WOOCOMMERCE"],
+    icon: <ShoppingCart size={24} />,
   },
   {
-    title: "Mobile App Development",
+    title: "Website Design and Development",
     description:
-      "Building native and cross-platform mobile applications for iOS and Android.",
-    icon: <SquareCode />,
-  },
-  {
-    title: "UI/UX Design",
-    description:
-      "Creating intuitive and visually appealing user interfaces for exceptional user experiences.",
-    icon: <Palette />,
+      "Our creative agency is a team of professionals focused on helping your brand grow.",
+    items: ["WORDPRESS", "UI UX DESIGN", "WEB DEVELOPMENT"],
+    icon: <Code size={24} />,
   },
   {
     title: "Digital Marketing",
     description:
-      "Driving online growth through SEO, social media, and content marketing strategies.",
-    icon: <Globe />,
+      "Our creative agency is a team of professionals focused on helping your brand grow.",
+    items: ["SOCIAL MEDIA", "PERFORMANCE MARKETING", "SEO", "CONTENT CREATION"],
+    icon: <BarChart2 size={24} />,
   },
   {
-    title: "DevOps & Automation",
+    title: "Graphic Design",
     description:
-      "Streamlining your development and operations workflows for efficiency.",
-    icon: <Paintbrush />,
+      "Our creative agency is a team of professionals focused on helping your brand grow.",
+    items: [
+      "CREATIVE ADS",
+      "BRANDING",
+      "POSTER DESIGNING",
+      "BROCHURE DESIGNING",
+    ],
+    icon: <Brush size={24} />,
   },
 ];
 
@@ -78,13 +75,13 @@ const Services = () => {
       </div>
 
       {/* service cards */}
-      <div className="py-42 text-center bg-white">
+      <div className="py-22 text-center bg-white">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-screen-xl mx-auto px-2 sm:px-4">
           {serviceCards.map((serviceCard, index) => {
             return (
               <div
                 key={index}
-                className="rounded-xl p-1 flex flex-col justify-center items-center text-center shadow-lg transition-all duration-300 hover:shadow-xl text-sm sm:text-base"
+                className="rounded-xl p-1 flex flex-col justify-center items-center text-center transition-all duration-300 hover:shadow-xl text-sm sm:text-base"
               >
                 <Card
                   title={serviceCard.title}
