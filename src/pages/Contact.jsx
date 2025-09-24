@@ -1,4 +1,6 @@
 import React from "react";
+import FloatingInput from "../components/ui/InputField";
+import Button from "../components/ui/Button";
 
 const Contact = () => {
   return (
@@ -12,17 +14,20 @@ const Contact = () => {
           </div>
 
           <h1 className="text-3xl sm:text-5xl md:text-7xl leading-tight">
-            The Solutions <br />
-            <span className="text-primary font-bold text-4xl sm:text-6xl">
-              Proudly Deliver
+            Get in Touch
+            <br />
+            We’re Here to
+            <span className="text-primary font-bold text-4xl sm:text-7xl">
+              {" "}
+              Help
             </span>
           </h1>
 
           <p className="text-sm sm:text-base md:text-lg text-muted leading-relaxed">
-            We provide tailored solutions designed not just to help your brand
-            grow, but to make it unforgettable — empowering you to stand out in
-            crowded markets, capture attention with confidence, and achieve
-            results that endure.
+            We’re here to provide the guidance and support you need — not just
+            to answer your questions, but to help you connect, collaborate, and
+            move forward with confidence. Reach out and let’s create a
+            meaningful, lasting impact together.
           </p>
         </div>
 
@@ -30,6 +35,30 @@ const Contact = () => {
         <div className="w-full md:w-1/2 flex items-center justify-center">
           <div></div>
         </div>
+      </div>
+
+      {/* Contact Form */}
+      <div className="bg-white text-black min-h-screen flex flex-col items-center justify-center space-y-14">
+        <div>
+          <h1 className="text-xl sm:text-2xl md:text-4xl font-semibold">Let's Talk</h1>
+        </div>
+        <form className="w-full max-w-4xl space-y-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <FloatingInput label="Name" type="text" />
+            <FloatingInput label="Email" type="email" />
+            <FloatingInput label="Phone Number" type="tel" />
+            <FloatingInput label="Required Service" type="text" />
+          </div>
+          <FloatingInput label="Message" type="text" />
+          <div className="pt-8">
+            <Button
+              text="Send Message"
+              theme="white"
+              type={"submit"}
+              width={"full"}
+            />
+          </div>
+        </form>
       </div>
     </div>
   );

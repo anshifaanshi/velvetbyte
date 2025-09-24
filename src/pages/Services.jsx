@@ -66,7 +66,7 @@ const Services = () => {
 
           <h1 className="text-3xl sm:text-5xl md:text-7xl leading-tight">
             The Solutions <br />
-            <span className="text-primary font-bold text-4xl sm:text-6xl">
+            <span className="text-primary font-bold text-4xl sm:text-7xl">
               Proudly Deliver
             </span>
           </h1>

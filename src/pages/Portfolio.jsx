@@ -56,7 +56,7 @@ const Portfolio = () => {
           <h1 className="text-3xl sm:text-5xl md:text-7xl leading-tight">
             Proven Solutions <br />
             for{" "}
-            <span className="text-primary font-bold text-4xl sm:text-6xl">
+            <span className="text-primary font-bold text-4xl sm:text-7xl">
               Leading Clients
             </span>
           </h1>

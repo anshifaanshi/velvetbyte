@@ -2,13 +2,14 @@ import { MoveRight } from "lucide-react";
 import React from "react";
 import { motion } from "framer-motion";
 
-const Button = ({ theme = "black", text, onClick }) => {
+const Button = ({ theme = "black", text, onClick, type, width }) => {
   const isBlackTheme = theme === "black";
 
   return (
     <button
+      type={type || "button"}
       onClick={onClick}
-      className={`group flex items-center justify-center px-6 py-2 text-md  transition-all duration-300 cursor-pointer border-2 rounded-tl-xl rounded-br-xl relative 
+      className={`group flex ${width === "full" ? "w-full" : ""} items-center justify-center px-8 py-3 text-lg  transition-all duration-300 cursor-pointer border-2 rounded-tl-xl rounded-br-xl relative 
         ${
           isBlackTheme
             ? "bg-black text-white border-white hover:bg-white hover:text-black"
