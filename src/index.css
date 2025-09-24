@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: black;
@@ -12,3 +16,20 @@ body {
     --color-muted: #6c757d; /*for dark and light both*/
     --color-line:rgb(20, 20, 20)
 }
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    border: 2px solid ;
+}
+
+
